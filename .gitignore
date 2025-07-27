@@ -1,0 +1,7 @@
+# .gitignore
+20250727
+20250727.pub
+.DS_Store
+*.log
+node_modules/
+dist/
