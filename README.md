@@ -31,14 +31,14 @@ VS Code Snippet
 To speed up manual logging, add this custom snippet to your snippets/code-snippets.json in Visual Studio Code:
 
 ```json
-"NOX Log Entry": {
+  "Create NOX Log Block": {
   "scope": "",
   "prefix": "log",
   "body": [
-    "${CURRENT_YEAR}-${CURRENT_MONTH}-${CURRENT_DATE} [mode:] - [] ${: | \\n - $2\\n}",
+    "${CURRENT_YEAR}-${CURRENT_MONTH}-${CURRENT_DATE} [mode:$3] - $5 [$2] ${$4: | \n  $1\n} ",
   ],
-  "description": "NOX daily log template"
-}
+  "description": "Log output to console"
+  }
 ```
 
 ### Usage
