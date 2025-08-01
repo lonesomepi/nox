@@ -1,14 +1,18 @@
 #!/bin/bash
 
 DATE=$1
-DAY=$2
-DIR="nox/models/homework/2025/07-july/${DAY}-homework"
+DAY=$(date -jf "%Y-%m-%d" "$DATE" +%d)
+DAY=${DAY#0}
+MONTH_NUM=$(date -jf "%Y-%m-%d" "$DATE" +%m)
+MONTH_NAME=$(date -jf "%Y-%m-%d" "$DATE" +%B | tr '[:upper:]' '[:lower:]')
+MONTH_DIR="${MONTH_NUM}-${MONTH_NAME}"
+DIR="nox/models/homework/2025/${MONTH_DIR}/${DAY}-homework"
 DAYWEEK=$(date -jf "%Y-%m-%d" "$DATE" +%a | tr '[:lower:]' '[:upper:]')
 
 mkdir -p "$DIR"
 mkdir -p "$DIR/models"
 
-shift 2
+shift 1
 for MODEL in "$@"; do 
   MODEL_LOWER=$(echo "$MODEL" | tr '[:upper:]' '[:lower:]')
   MODEL_DIR="$DIR/models/$MODEL_LOWER"
