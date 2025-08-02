@@ -39,7 +39,7 @@ cat <<LOG > "$DIR/log-$DAY.md"
 ---
 title: "NOX Log"
 date: "$DATE"
-route: "nox/models/homework/2025/${MONTH_DIR}/${DAY}-homework/"
+route: "nox/models/homework/$YEAR/${MONTH_DIR}/${DAY}-homework/"
 file: "log-$DAY.md"
 ---
 
@@ -56,7 +56,7 @@ cat <<SIG > "$DIR/signals-$DAY.md"
 ---
 title: "NOX Signals"
 date: "$DATE"
-route: "nox/models/homework/2025/${MONTH_DIR}/${DAY}-homework/"
+route: "nox/models/homework/$YEAR/${MONTH_DIR}/${DAY}-homework/"
 file: "signals-$DAY.md"
 ---
 
