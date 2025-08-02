@@ -62,11 +62,11 @@ file: "signals-$DAY.md"
 
 ## 1.7 Routine
 
-| ID | Time    | Domain  | [] | Time  | Notes       |
-|----|---------|---------|----|-------|-------------|
-| 1  | @  5:00 | Awake   | [] | :     |  |
-| 2  | @  6:43 | Commute | [] | :     |  |
-| 3  | by 7:45 | Orient  | [] | :     |  |
+| ID | Time    | Domain  | [x] | Time  | Notes       |
+|----|---------|---------|-----|-------|-------------|
+| 1  | @  5:00 | Awake   | [] | :  |  |
+| 2  | @  6:43 | Commute | [] | :  |  |
+| 3  | by 7:45 | Orient  | [] | :  |  |
 
 ## Scoring Shell
 
